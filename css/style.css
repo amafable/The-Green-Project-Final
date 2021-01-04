@@ -1,0 +1,56 @@
+/* About Showcase */
+
+.showcase{
+    background-color: rgba(112, 175, 133, 0.5);
+    padding: 20px;
+    margin: 40px auto;
+    border-radius: 5px;
+}
+
+.showcase-img{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.text-showcase{
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+/* Project Showcase */
+
+.showcase-project{
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.project-card{
+    background-color: rgba(240, 226, 208, 0.5);
+    color: #333;
+    margin: 20px 0;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.img-contain{
+    width:100%
+}
+
+/* Contact Form */
+.showcase-contact{
+    margin: 40px 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.btn1 {
+    background-color: #40a8c4;
+    padding: 10px;
+}
+
+
+
+
+

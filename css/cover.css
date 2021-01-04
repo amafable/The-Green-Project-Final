@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+
+.btn:hover{
+    transform: scaleY(0.98);
+}
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+body {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.lead {
+  font-weight: 600;
+}
+
+.cover-shadow{
+    box-shadow: inset 0 0 5rem rgba(67, 53, 32, 0.5);
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+}
+
+.cover-container {
+  max-width: 42em;
+}
+
+
+/*
+ * Header
+ */
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+.nav a {
+    padding: 20px;
+    font-weight: 700;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, .5);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+/*
+ * Cover
+ */
+ .cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+/* images */
+.img-fluid {
+    width: 75%;
+}
+
+
+/*
+ * Footer
+ */
+.mastfoot {
+  color: rgba(255, 255, 255, .5);
+}
+
+.footer p{
+  font-weight: 400;
+}
+
+.social a{
+  padding: 0 5px;
+}
+
+.subscription {
+  background-color: rgba(55, 64, 69, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px auto;
+}
+
+.btn1{
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+.btn1-outline{
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+
+.btn1:hover {
+  cursor: pointer;
+  transform: scale(0.98);
+}
+
+
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+
+
+
+/* Desktop Media */
+
+@media (min-width:800px){
+  .navbar{
+    max-width: 1100px;
+  }
+  .inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .img-50 {
+    width: 40%;
+  }
+}
+
+
+
