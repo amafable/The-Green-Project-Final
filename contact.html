@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, Javascript, The green project, life, community, plant, plant conservation, reforestation project, group life">
+    <title>The Green Project</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/cover.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="text-center">
+    <div class="cover-container d-flex h100 p-3 mx-auto flex-column">
+        <header class="masthead mb-auto">
+            <div class="inner">
+                <img src="images/logo.png" alt="The Green Project Logo" class="img-fluid img-50">
+                <nav class="nav nav-masthead justify-content-center">
+                    <a href="index.html" class="navlink active">Home</a>
+                    <a href="about.html" class="navlink">About</a>
+                    <a href="project.html" class="navlink">Project</a>
+                    <a href="contact.html" class="navlink">Contact</a>
+                </nav>
+            </div>
+        </header>
+        <!-- Contact Form -->
+        <section class="showcase-contact">
+            <div class="container">
+                 <h1>Send Us Your Message</h1>
+                 <hr>
+
+                 <div class="row font-weight-bold contact1">
+                    <div class="col-md-6">
+                        <p class="text-justify">
+                            Thank you for visiting the website. 
+                        </p>
+                        <p class="text-justify">
+                            For upcoming activities where you are interested to volunteer or give us a sponsorship to help the community, don't hesitate to leave us a message for further discussions. 
+                        </p>
+                    </div>
+                    <form action="mailto:thegreenproject@gmail.com" method="GET" class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" name="email" id="email"  placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" class="form-control" name="contact" id="contact" placeholder="Contact">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Company or Organization">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <a  href="#" class="btn1 btn-block btn-outline" type="submit" onclick="myForm()" >Submit</a>
+                            </div>
+                    </form>
+                 </div>
+            </div>
+        </section>
+        <footer class="masfoot mt-auto">
+            <div class="inner">
+                <p>
+                    The Green Project <br>    
+                    Copyright &copy;2020 
+                </p>
+                <div class="social">
+                    <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        function myForm(){
+            var box1 = document.getElementById("name");
+            var box2 = document.getElementById("email");
+            var box3 = document.getElementById("contact")
+
+            if(box1.value == "" || box2.value == "" || box3 == ""){
+                alert("Please fill up missing information");
+                return false;
+            }
+
+            if(box3.value.length<11){
+                alert("Please fill up contact");
+                return false;
+            }
+
+            if(box1.value + box2.value + box3.value){
+                alert("Thank you for your message")
+            }
+        }
+       
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
